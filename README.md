@@ -13,7 +13,7 @@ At BL1-5, there is a Pilatus1M detector for SAXS and a Pilatus100k detector for 
 The integration by pyFAI-calib2 needs .cbf files. See details in BatchRAWprocessor.
 
 ## 2. Calibrate and mask ##
-Use GUI of pyFAI-calib2 to calibrate the sample geometry and mask bad pixels on the detector. Save your .poni and .edf files for calibration and masking.
+Use GUI of pyFAI-calib2 to calibrate the sample geometry and mask bad pixels on the detector. Save your .poni and .edf files for calibration and masking. BatchRAWprocess also has the scripts for calibration. But it does not iterate well unless the initial values are close enough.
 
 ## 3. Integrate in batch ##
 Run the rest of BatchRAWprocessor. Output the integrated files.
